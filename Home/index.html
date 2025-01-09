@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petzoo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button id="acessibilidade-btn" aria-label="Botão de acessibilidade">Acessibilidade</button>
+    <div class="conteudo">
+        <header>
+            <div class="logo">
+                <img src="/Home/imagens/logo transparente.png" alt="Logo Petshop">
+            </div>
+            <div class="pesquisar">
+                <input type="text" placeholder="Pesquisar..." aria-label="Barra de pesquisa">
+                <img src="/Home/imagens/carrinho.png" alt="Carrinho de Compras">
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/rações/ração.html">Rações</a></li>
+                <li><a href="/acessórios/acessorios.html">Acessórios</a></li>
+                <li><a href="/medicamentos/medicamentos.html">Medicamentos</a></li>
+                <li><a href="/higiene/higiene.html">Higiene</a></li>
+            </ul>
+        </nav>
+
+        <section class="banner">
+            <img src="/Home/imagens/Captura de tela 2024-10-23 204914.png" alt="Imagem de Pets">
+        </section>
+
+        <section class="caixas">
+            <div class="box">ATENDIMENTO ONLINE </div>
+            <div class="box">ENVIO PARA TODO BRASIL</div>
+            <div class="box">ATÉ 12X SEM JUROS</div>
+            <div class="box">SITE 100% SEGURO</div>
+        </section>
+    </div>
+
+    <div id="acessibilidade-menu">
+        <button onclick="altoContraste()">Alto Contraste</button>
+        <button onclick="leitorDeTela()">Leitor de Tela</button>
+        <button onclick="zoomIn()">Zoom +</button> 
+        <button onclick="zoomOut()">Zoom -</button> 
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

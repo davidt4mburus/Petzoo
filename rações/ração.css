@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8F5E9 
+} 
+
+main { 
+    background-color: #E8F5E9;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: #4d7ebd;
+}
+
+.logo img {
+    width: 150px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold; 
+    color: #4d7ebd;
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #d6dad5;
+}
+
+.pesquisar img {
+    width: 80px;
+    cursor: pointer;
+}
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; 
+    }
+
+.produto {
+    background-color: #4d7ebd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produto h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.produto button {
+    background-color: #64da64;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #46b346;
+}

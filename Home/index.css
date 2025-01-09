@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0097b2;
+    transform: scale(var(--zoom-level));
+    transform-origin: top left;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4d7ebd;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #d6dad5;
+}
+
+.pesquisar img {
+    width: 80px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #346ba1;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 100px;
+}
+
+nav ul li a {
+    color: rgb(255, 136, 39);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 525px;
+}
+
+.caixas {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.caixas .box {
+    background-color: #64da64;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#acessibilidade-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #d18023;
+    color: rgb(223, 212, 212);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(calc(1 / var(--zoom-level)));
+    z-index: 1000;
+}
+
+#acessibilidade-menu {
+    position: fixed;
+    bottom: 155px;
+    right: 13px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+    transform: scale(calc(1 / var(--zoom-level)));
+}
+
+#acessibilidade-menu button {
+    background-color: #4d7ebd;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alto-contraste {
+    background-color: #000;
+    color: #fff;
+}
+
+.alto-contraste header,
+.alto-contraste nav,
+.alto-contraste .caixas .box {
+    background-color: #000;
+    color: #fff;
+}
+
+.alto-contraste .pesquisar input {
+    background-color: #333;
+    color: #fff;
+}
+
+.alto-contraste nav ul li a {
+    color: #ff0;
+}
+.alto-contraste img { filter: brightness(0.3); 
+}
